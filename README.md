@@ -21,6 +21,12 @@ The method below does this workaround:
 public Group CreateGroupDetail(GroupType groupType, View view, XYZ location);
 ```
 
+* [GroupDetailService.cs](RevitTestPlaceGroup.Tests/GroupDetailService.cs)
+
+If there is not detail `Group` in the document, the method `CreateGroupDetail` throws an `Exception`. 
+
+*Could be possible to open a document copy a view with a detail `Group` and paste in the main document, to make the method to work without a `Group` created. This is not implemented in this project.*
+
 ## Video
 
 Videos in English about this project.
